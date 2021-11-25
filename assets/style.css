@@ -1,0 +1,81 @@
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    background: white;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+}
+  
+li {
+    color: #fff;
+    background: rgb(164, 168, 164);
+    text-align: center;
+    display: block;
+    float: left;
+    width: 20%;
+    padding: 16px;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.25s;
+}
+    
+li a {
+    color: #fff;
+}
+  
+li:hover {
+    cursor: pointer;
+}
+
+.dropdown:hover {
+    background:rgb(204, 125, 125);
+}
+ul li ul {
+    background: rgb(223, 222, 222);
+    visibility: hidden;
+    opacity: 0;
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    transition: 0.25s;
+    margin-top: 16px;
+    left: 0;
+    display: none;
+}
+  
+ul li:hover > ul,
+ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+  
+ul li ul li {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.freaks_inner {
+    background: rgb(223, 222, 222);
+    visibility: hidden;
+    opacity: 0;
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    top: 0px;
+    transition: 0.25s;
+    left: 272px;
+    display: none;
+}
